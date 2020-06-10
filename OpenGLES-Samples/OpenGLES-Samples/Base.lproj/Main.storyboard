@@ -10,7 +10,7 @@
         <!--GLKit View Controller-->
         <scene sceneID="vTO-i2-SOq">
             <objects>
-                <glkViewController preferredFramesPerSecond="30" id="xMG-MR-NJI" customClass="GLK" sceneMemberID="viewController">
+                <glkViewController preferredFramesPerSecond="30" id="xMG-MR-NJI" customClass="ViewController" customModule="OpenGLES_Samples" customModuleProvider="target" sceneMemberID="viewController">
                     <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="dhf-Yy-EPS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
