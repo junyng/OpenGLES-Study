@@ -10,7 +10,7 @@
         <!--Examples-->
         <scene sceneID="JUZ-Sw-LvR">
             <objects>
-                <tableViewController id="oen-9K-tp5" customClass="ExampleTableViewController" customModule="OpenGLES_Samples" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="oen-9K-tp5" customClass="ExamplesTableViewController" customModule="OpenGLES_Samples" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1KM-H6-vcQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,6 +23,7 @@
                     <navigationItem key="navigationItem" title="Examples" id="4rZ-tB-hyc"/>
                     <connections>
                         <segue destination="xMG-MR-NJI" kind="show" identifier="DrawTriangle" id="CMa-Zx-K57"/>
+                        <segue destination="eah-zJ-qMB" kind="show" identifier="DrawSquare" id="UbK-TG-yxk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUi-1t-7CJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -64,6 +65,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvc-08-bli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-404.34782608695656" y="40.848214285714285"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="PzK-GO-5Wp">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="eah-zJ-qMB" customClass="DrawSquareViewController" customModule="OpenGLES_Samples" customModuleProvider="target" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="BGJ-Ua-MtV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O8m-cR-lgA"/>
+                        <connections>
+                            <outlet property="delegate" destination="eah-zJ-qMB" id="cN9-J8-ckn"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" id="mdb-G2-XLT"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAq-VZ-gBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="767"/>
         </scene>
     </scenes>
 </document>

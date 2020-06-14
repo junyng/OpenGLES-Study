@@ -10,7 +10,7 @@ import UIKit
 
 class ExamplesTableViewController: UITableViewController {
 
-    private let titles = ["Draw Triangle"]
+    private let titles = ["DrawTriangle", "DrawSquare"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class ExamplesTableViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "DrawTriangle", sender: nil)
+        performSegue(withIdentifier: titles[indexPath.row], sender: nil)
     }
 
 }
