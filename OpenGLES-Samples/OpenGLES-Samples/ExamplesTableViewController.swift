@@ -10,7 +10,7 @@ import UIKit
 
 class ExamplesTableViewController: UITableViewController {
 
-    private let titles = ["DrawTriangle", "DrawSquare"]
+    private let titles = ["DrawTriangle", "DrawSquare", "Cube"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -24,6 +24,7 @@
                     <connections>
                         <segue destination="xMG-MR-NJI" kind="show" identifier="DrawTriangle" id="CMa-Zx-K57"/>
                         <segue destination="eah-zJ-qMB" kind="show" identifier="DrawSquare" id="UbK-TG-yxk"/>
+                        <segue destination="g1t-aZ-E3g" kind="show" identifier="Cube" id="Yyd-p3-AXq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUi-1t-7CJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,6 +84,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAq-VZ-gBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1310" y="767"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="uvc-d9-7BU">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="g1t-aZ-E3g" customClass="CubeViewController" customModule="OpenGLES_Samples" customModuleProvider="target" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="VcW-b9-2r9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="q5J-Ey-iwi"/>
+                        <connections>
+                            <outlet property="delegate" destination="g1t-aZ-E3g" id="Cs2-82-FqC"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" id="lXo-2o-hl2"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdE-jV-VUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="1503"/>
         </scene>
     </scenes>
 </document>
