@@ -25,6 +25,7 @@
                         <segue destination="xMG-MR-NJI" kind="show" identifier="DrawTriangle" id="CMa-Zx-K57"/>
                         <segue destination="eah-zJ-qMB" kind="show" identifier="DrawSquare" id="UbK-TG-yxk"/>
                         <segue destination="g1t-aZ-E3g" kind="show" identifier="Cube" id="Yyd-p3-AXq"/>
+                        <segue destination="x4k-N9-LWP" kind="show" identifier="SquareTexture" id="gIO-gy-3Q8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUi-1t-7CJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -102,6 +103,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdE-jV-VUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1316" y="1503"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="DaN-CV-MEo">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="x4k-N9-LWP" customClass="SquareTextureViewController" customModule="OpenGLES_Samples" customModuleProvider="target" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="TtD-go-PZq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EMn-rV-oTZ"/>
+                        <connections>
+                            <outlet property="delegate" destination="x4k-N9-LWP" id="d36-8t-qjp"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" id="pkY-9J-hjH"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNd-aS-hbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="2202"/>
         </scene>
     </scenes>
 </document>

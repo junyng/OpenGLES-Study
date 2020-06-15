@@ -15,6 +15,8 @@
 		307F2DDB24912BA9004E7866 /* ExamplesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307F2DDA24912BA9004E7866 /* ExamplesTableViewController.swift */; };
 		307F2DE024912F14004E7866 /* DrawSquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307F2DDF24912F14004E7866 /* DrawSquareViewController.swift */; };
 		307F2DE224963103004E7866 /* CubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307F2DE124963103004E7866 /* CubeViewController.swift */; };
+		307F2DE42497AADA004E7866 /* SquareTextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307F2DE32497AAD9004E7866 /* SquareTextureViewController.swift */; };
+		307F2DE62497C4A6004E7866 /* dungeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 307F2DE52497C4A6004E7866 /* dungeon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		307F2DDA24912BA9004E7866 /* ExamplesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesTableViewController.swift; sourceTree = "<group>"; };
 		307F2DDF24912F14004E7866 /* DrawSquareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawSquareViewController.swift; sourceTree = "<group>"; };
 		307F2DE124963103004E7866 /* CubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeViewController.swift; sourceTree = "<group>"; };
+		307F2DE32497AAD9004E7866 /* SquareTextureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTextureViewController.swift; sourceTree = "<group>"; };
+		307F2DE52497C4A6004E7866 /* dungeon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +69,12 @@
 				307F2DCA24910A1D004E7866 /* ViewController.swift */,
 				307F2DDF24912F14004E7866 /* DrawSquareViewController.swift */,
 				307F2DE124963103004E7866 /* CubeViewController.swift */,
+				307F2DE32497AAD9004E7866 /* SquareTextureViewController.swift */,
 				307F2DCC24910A1D004E7866 /* Main.storyboard */,
 				307F2DCF24910A20004E7866 /* Assets.xcassets */,
 				307F2DD124910A20004E7866 /* LaunchScreen.storyboard */,
 				307F2DD424910A20004E7866 /* Info.plist */,
+				307F2DE52497C4A6004E7866 /* dungeon.png */,
 			);
 			path = "OpenGLES-Samples";
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				307F2DD324910A20004E7866 /* LaunchScreen.storyboard in Resources */,
+				307F2DE62497C4A6004E7866 /* dungeon.png in Resources */,
 				307F2DD024910A20004E7866 /* Assets.xcassets in Resources */,
 				307F2DCE24910A1D004E7866 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +156,7 @@
 				307F2DC724910A1D004E7866 /* AppDelegate.swift in Sources */,
 				307F2DE224963103004E7866 /* CubeViewController.swift in Sources */,
 				307F2DE024912F14004E7866 /* DrawSquareViewController.swift in Sources */,
+				307F2DE42497AADA004E7866 /* SquareTextureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
