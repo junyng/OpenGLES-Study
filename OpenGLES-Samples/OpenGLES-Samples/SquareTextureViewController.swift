@@ -26,7 +26,7 @@ class SquareTextureViewController: GLKViewController {
     private let vertices: [Vertex] = [
         Vertex(x: 0.5, y: 0.5, z: 0.0, r: 1.0, g: 0.0, b: 0.0, a: 0.0, u: 1.0, v: 1.0),
         Vertex(x: 0.5, y: -0.5, z: 0.0, r: 0.0, g: 1.0, b: 0.0, a: 0.0, u: 1.0, v: 0.0),
-        Vertex(x: -0.5, y: -0.5, z: 0.0, r: 0.0, g: 0.0, b: 1.0, a: 0.0, u: 1.0, v: 1.0),
+        Vertex(x: -0.5, y: -0.5, z: 0.0, r: 0.0, g: 0.0, b: 1.0, a: 0.0, u: 0.0, v: 0.0),
         Vertex(x: -0.5, y: 0.5, z: 0.0, r: 1.0, g: 1.0, b: 0.0, a: 0.0, u: 0.0, v: 1.0)
     ]
     private let indices: [GLubyte] = [
@@ -105,7 +105,7 @@ class SquareTextureViewController: GLKViewController {
             2,
             GLenum(GL_FLOAT),
             GLboolean(GL_FALSE),
-            GLsizei(MemoryLayout<Vertex>.size), UnsafeRawPointer(bitPattern: 3 * MemoryLayout<Float>.size))
+            GLsizei(MemoryLayout<Vertex>.size), UnsafeRawPointer(bitPattern: 7 * MemoryLayout<GLfloat>.size))
         
         glBindBuffer(GLenum(GL_ARRAY_BUFFER), vbo)
         glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), ebo)
